@@ -5,8 +5,8 @@ import com.aliumujib.loanpoc.R
 object FORM_GRAPH {
 
 
-    var firstNameQuestion = TextFieldQuestion(1, "Let’s start with your first name")
-    var lastNameQuestion = TextFieldQuestion(2, "Tell us your last name")
+    var firstNameQuestion = TextFieldQuestion(1, "Let’s start with your first name", "Your first name")
+    var lastNameQuestion = TextFieldQuestion(2, "Tell us your last name", "Your last name")
 
     val namesPage = Page(listOf(firstNameQuestion, lastNameQuestion), "Personal Information", "")
 
@@ -26,21 +26,21 @@ object FORM_GRAPH {
 
     val personalInfoSection = Section(1, "Personal Information",
             "In  this section, we will collect basic inforamation about you so we can decide" +
-                    " if we gon give you our money or not.", R.drawable.umberella, 0, true, 1)
+                    " if we gon give you our money or not.", R.drawable.umberella, 0, true, 1, listOf(namesPage, dobPage, genderRtnShipStatsPage))
 
 
     val educationInfoSection = Section(1, "Education Information",
             "In  this section, we will collect basic inforamation about you so we can decide" +
-                    " if we gon give you our money or not.", R.drawable.umberella, 0, true, 1)
+                    " if we gon give you our money or not.", R.drawable.umberella, 0, true, 1, listOf())
 
 
     val addressInfoSection = Section(1, "Address Information",
             "In  this section, we will collect basic inforamation about you so we can decide" +
-                    " if we gon give you our money or not.", R.drawable.umberella, 0, true, 1)
+                    " if we gon give you our money or not.", R.drawable.umberella, 0, true, 1, listOf())
 
     val loanInfoSection = Section(1, "Loan Details",
             "In  this section, we will collect basic inforamation about you so we can decide" +
-                    " if we gon give you our money or not.", R.drawable.umberella, 0, true, 1)
+                    " if we gon give you our money or not.", R.drawable.umberella, 0, true, 1, listOf())
 
     val sections = listOf(personalInfoSection, educationInfoSection, addressInfoSection, loanInfoSection)
 

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/question_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="How much voluntary contributions do you make per payment?" />
+
+
+    <co.ceryle.segmentedbutton.SegmentedButtonGroup
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/segmented_button"
+        app:layout_constraintEnd_toEndOf="@+id/question_title"
+        app:layout_constraintStart_toStartOf="@+id/question_title"
+        app:layout_constraintTop_toBottomOf="@+id/question_title"
+        app:sbg_animateSelector="accelerate"
+        app:sbg_animateSelectorDuration="100"
+        app:sbg_backgroundColor="@color/colorReddishGrey"
+        app:sbg_dividerColor="@android:color/transparent"
+        app:sbg_dividerSize="0dp"
+        app:sbg_position="1"
+        app:sbg_radius="25dp"
+        app:sbg_ripple="true"
+        app:sbg_rippleColor="@color/colorPrimaryLight"
+        app:sbg_selectorColor="@color/colorPrimaryDark">
+
+        <co.ceryle.segmentedbutton.SegmentedButton
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            app:sb_text="Button 1"
+            android:id="@+id/button_1"
+            app:sb_textColor="@color/colorPrimaryDark"
+            app:sb_textColor_onSelection="@color/white" />
+
+
+        <co.ceryle.segmentedbutton.SegmentedButton
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:minHeight="10dp"
+            android:id="@+id/button_2"
+            android:textAllCaps="false"
+            app:sb_text="Button 3"
+            app:sb_textColor="@color/colorPrimaryDark"
+            app:sb_textColor_onSelection="@color/white" />
+
+    </co.ceryle.segmentedbutton.SegmentedButtonGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

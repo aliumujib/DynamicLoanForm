@@ -11,8 +11,10 @@ interface SectionNavigator {
 }
 
 
-interface OnPageNextButtonClicked {
+interface OnPageControlButtonClicked {
 
-    fun onPageNextButtonClickedListener(page: Page, isLastPage: Boolean)
+    fun onPageNextButtonClickedListener(page: Page, isLastPage: Boolean, pageIndex: Int)
+
+    fun onPagePreviousButtonClickedListener(page: Page, isFirstPage: Boolean, pageIndex: Int)
 
 }

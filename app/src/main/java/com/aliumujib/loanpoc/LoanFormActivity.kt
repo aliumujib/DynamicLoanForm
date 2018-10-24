@@ -7,6 +7,11 @@ import com.aliumujib.loanpoc.adapter.SectionPagerAdapter
 import com.aliumujib.loanpoc.models.FORM_GRAPH
 import com.aliumujib.loanpoc.models.Section
 import kotlinx.android.synthetic.main.activity_loan_form.*
+import android.view.MotionEvent
+import android.view.View
+import android.view.View.OnTouchListener
+
+
 
 class LoanFormActivity : AppCompatActivity(), SectionNavigator {
 
@@ -19,6 +24,8 @@ class LoanFormActivity : AppCompatActivity(), SectionNavigator {
         setContentView(R.layout.activity_loan_form)
 
         pager.adapter = SectionPagerAdapter(supportFragmentManager, FORM_GRAPH.sections)
+
+        pager.setOnTouchListener { arg0, arg1 -> true }
 
     }
 

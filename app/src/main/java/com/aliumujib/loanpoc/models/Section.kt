@@ -9,7 +9,8 @@ class Section(var sectionNo: Int,
               var sectionDrawable: Int,
               var sectionBackground: Int,
               var showSectionNumber: Boolean,
-              var sectionId: Int) : Parcelable {
+              var sectionId: Int,
+              var pages: List<Page>? = null) : Parcelable {
 
     constructor(source: Parcel) : this(
             source.readInt(),

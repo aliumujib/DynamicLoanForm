@@ -33,6 +33,7 @@ dependencies {
     api 'androidx.legacy:legacy-support-v13:1.0.0'
     api 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'com.github.ceryle:SegmentedButton:v2.0.2'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.0-beta02'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-beta02'

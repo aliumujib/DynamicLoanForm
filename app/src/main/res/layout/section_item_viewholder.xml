@@ -29,7 +29,6 @@
         app:layout_constraintStart_toStartOf="@+id/time_marker"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <TextView
         android:id="@+id/section_title"
         android:layout_width="0dp"
@@ -45,6 +44,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/time_marker"
         app:layout_constraintTop_toTopOf="@+id/time_marker" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
